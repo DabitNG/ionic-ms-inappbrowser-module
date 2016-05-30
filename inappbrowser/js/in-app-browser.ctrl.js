@@ -16,23 +16,22 @@
 	* InAppBrowser Controller
 	*/
 	.controller('InAppBrowserCtrl', openBrowser);
-
+	
 	/**
 	 * Given url opens in browser
-	 * @return {function} sysBrowser(), blankBrowser(), selfBroser()
+	 * @param  $scope
+	 * @return 
 	 */
-	function openBrowser(){
-		return {
-			sysBrowser: function(url){
-				window.open(url, '_system', 'location=yes');
-			},
-			blankBrowser: function(url){
-				window.open(url, '_blank', 'location=yes');
-			},
-			selfBrowser: function(url){
-				window.open(url, '_self', 'location=yes');
-			}
-		}
+	function openBrowser($scope){
+		$scope.sysBrowser = function(url){
+			window.open(url, '_system', 'location=yes');
+		};
+		$scope.blankBrowser = function(url){
+			window.open(url, '_blank', 'location=yes');
+		};
+		$scope.selfBrowser = function(url){
+			window.open(url, '_self', 'location=yes');
+		};
 	} 
 
 })();
