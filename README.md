@@ -13,7 +13,7 @@ This module enables to open URLs in device browser
 
   ```
   <script src="modules/in-app-browser/module.js"></script>
-  <script src="modules/in-app-browser/js/in-app-browserctrl.js"></script>
+  <script src="modules/in-app-browser/js/in-app-browser.ctrl.js"></script>
   ```
   
 4. Place the following code into your template's `<ion-content>`
