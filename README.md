@@ -5,7 +5,7 @@
 This module enables to open URLs in device browser
 
 ### Installing module
-1. `https://github.com/DabitNG/ionic-ms-inappbrowser-module`
+1. `git clone https://github.com/DabitNG/ionic-ms-inappbrowser-module`
 2. `cordova plugin cordova-plugin-inappbrowser`
 2. Extract and place in-app-browser folder into www/modules.
 2. Go to module-injector.js file under www/modules/main and add `in-app-browser` dependency.
